@@ -1,0 +1,26 @@
+.modal {
+	max-width: 600px;
+	min-height: 200px;
+	max-height: 400px;
+	padding: 60px 20px 20px;
+	border-radius: 20px;
+	position: relative;
+	background-color: #fff;
+
+	&::backdrop {
+		background-color: rgba(0, 0, 0, 0.75);
+	}
+
+	&[open] {
+		display: block;
+	}
+}
+
+.modal__close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background-color: transparent;
+	padding: 0;
+	border: none;
+}
